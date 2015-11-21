@@ -9,6 +9,7 @@ body {
      background-image: url('./concrete-011.jpg');
      background-size: 100%;
      font-family: 'Ubuntu', sans-serif;
+     background-color: #f3f3f3;
 
     
 }
@@ -28,8 +29,8 @@ body {
 }
 
 .introPar {
-    background-color: #f3f3f3;
     margin-top: 0;
     padding: 30px;
-    
+    background-color: #f3f3f3;
+
 }
