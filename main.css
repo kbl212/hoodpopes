@@ -1,0 +1,35 @@
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+body {
+     background-image: url('./concrete-011.jpg');
+     background-size: 100%;
+     font-family: 'Ubuntu', sans-serif;
+
+    
+}
+.header {
+    background-color: #000;
+  /*  background-color: #F3F3F3;*/
+}
+
+.jumbotron {
+    background-image: url('http://www.warclans.com/images/village/vb.jpg');
+    background-size: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.introPar {
+    background-color: #f3f3f3;
+    margin-top: 0;
+    padding: 30px;
+    
+}
