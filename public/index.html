@@ -20,14 +20,16 @@
     
     <div class="header">
       <div class="container">
-        <ul class="nav nav-tabs nav-collapse">
+        <ul class="navTop nav nav-tabs nav-collapse">
             <li role="presentation" class="active"><a ui-sref="home">Home</a></li>
-            <li role="presentation"><a ui-sref="attacks">Attack Strategies</a></li>
             <li role="presentation"><a ui-sref="layouts">Base Layouts</a></li>
+            <li role="presentation"><a ui-sref="attacks">Attack Strategies</a></li>
             <li role="presentation"><a ui-sref="news">Clash News</a></li>
-           
+            
         </ul>
-        
+        <ul class="navTop pull-right">
+          <li><img src="Drawing.png" class="hp-logo"></li>
+            </ul>
       </div>
 
     
@@ -37,6 +39,13 @@
 <div ui-view></div>
     
     
+<footer>
+    
+
+Dark graphic by <a href="http://yanlu.de">Yannick</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a>
+    
+    
+</footer>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="js/app.js"></script>
