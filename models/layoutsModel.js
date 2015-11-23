@@ -1,4 +1,32 @@
-module.exports = [
+var mongoose = require('mongoose');
+
+
+
+var layoutSchema = new mongoose.Schema({
+    
+    name: {type: String, required: true},
+    thLevel: {type: Number, required: true},
+    link: {type: String, required: true}
+
+});
+
+module.exports = mongoose.model('Layout', layoutSchema);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*[
 
             {
                 name: "TH 5 Layout 1",
@@ -33,4 +61,4 @@ module.exports = [
                 link: "https://youtu.be/1yAo_YtKS1s?list=PL6zRJH-HQH-F4sxMJHohkTp1LIn9IdHM_"
             }
 
-];
+]; */

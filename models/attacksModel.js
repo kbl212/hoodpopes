@@ -1,5 +1,40 @@
-module.exports = [
-        
+var mongoose = require('mongoose');
+
+
+var attackSchema = new mongoose.Schema({
+    
+    name: {type:String, required: true},
+    thLevel: {type: Number, required: true},
+    unitsUsed: {type: Array, required: true},
+    link: {type: String, required: true}
+    
+});
+
+
+module.exports = mongoose.model('Attack', attackSchema);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*[
+
+    
             {
                 name: "Giants/Barbs/Archers",
                 thLevel: 5,
@@ -94,4 +129,4 @@ module.exports = [
                 link: "https://youtu.be/-gycxu61iGI?list=PL6zRJH-HQH-F4sxMJHohkTp1LIn9IdHM_"
                 
             }
-];
+];*/

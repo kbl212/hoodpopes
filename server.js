@@ -29,10 +29,9 @@ var app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
-//app.use(express.static(__dirname + '/public));
+app.use(express.static(__dirname + '/public'));
 
 
-//---------------------------------------SERVE UP STATIC FILES
 
 
 /////////////
@@ -40,27 +39,12 @@ app.use(cors());
 /////////////
 
 app.get('/api/attacks', attacksCtrl.getAttacks);
-
+app.post('/api/attacks', attacksCtrl.createAttack);
+//app.delete('/api/attacks', attacksCtrl.deleteAttack);
 app.get('/api/layouts', layoutsCtrl.getLayouts);
 
 app.post('/api/news', newsCtrl.createPost);
 app.get('/api/news', newsCtrl.getPosts);
-
-
-/*
-app.post('/api/news', newsCtrl.create);
-
-app.get('/api/attacks', attacksCtrl.read);   //----have front end send query for specific thLevel....  /api/attacks?th=7
-
-app.get('/api/layouts', layoutsCtrl.read);  //----same as with attacks
-
-*/
-
-
-
-
-
-
 
 
 
@@ -78,4 +62,13 @@ app.listen(port, function() {
     
     console.log('listening on port ' + port);
     
+});
+
+var mongoUri = "mongodb://localhost:27017/hoodpopes";
+mongoose.connect(mongoUri, function(err) {
+    if (err) throw err;
+});
+
+mongoose.connection.once('open', function() {
+    console.log('connected to mongoDB at: ', mongoUri);
 });
