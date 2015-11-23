@@ -1,0 +1,26 @@
+{
+  "name": "hood-popes",
+  "version": "1.0.0",
+  "description": "hoodpopes website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbl212/hoodpopes.git"
+  },
+  "author": "Kyle Lauritzen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbl212/hoodpopes/issues"
+  },
+  "homepage": "https://github.com/kbl212/hoodpopes#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.7"
+  }
+}

@@ -7,25 +7,25 @@ html {
 
 body {
      background-image: url('./concrete-011.jpg');
+     background-repeat: no-repeat;
      background-size: 100%;
      font-family: 'Ubuntu', sans-serif;
      background-color: #f3f3f3;
 
     
 }
-.header {
-    background-color: #000;
-  /*  background-color: #F3F3F3;*/
-}
 
 .jumbotron {
     background-image: url('http://www.warclans.com/images/village/vb.jpg');
     background-size: 100%;
+ /*   background-position: center center;
+    background-repeat: no-repeat;*/
     text-align: center;
-    color: aliceblue;
+    color: #2727d0;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .introPar {
@@ -48,7 +48,7 @@ body {
     margin-bottom: 10px;
 }
 
-footer{
+.footer{
     background-color: #f3f3f3;
     position: absolute;
     bottom: 0;
@@ -62,9 +62,22 @@ footer{
 
 .navTop {
     display:inline-block;
+    margin-bottom: 0;
 }
 
-.nav {
-        border-bottom: 0;
+li {
+    
+    text-align:center;
+}
 
+.supercell-disclaimer {
+    font-size: 12px;
+}
+
+.navbar-inverse {
+    width: 100%;
+}
+
+textarea {
+    max-width: 90%;
 }

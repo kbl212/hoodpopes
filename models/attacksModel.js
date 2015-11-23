@@ -1,13 +1,4 @@
-var app = angular.module('hoodPopes');
-
-
-
-app.controller('attacksCtrl', function($scope, attacksService) {
-    
-    
-    
-    
-        var th5attacks = [
+module.exports = [
         
             {
                 name: "Giants/Barbs/Archers",
@@ -22,10 +13,8 @@ app.controller('attacksCtrl', function($scope, attacksService) {
                 unitsUsed: ["Balloons", "Wizards"],
                 link: "https://www.youtube.com/watch?v=z1bQKu-k0fg"
                 
-            }
+            },
 
-        ];
-        var th6attacks = [
         
             {
                 name: "Giants/Wizards/Healer",
@@ -40,9 +29,7 @@ app.controller('attacksCtrl', function($scope, attacksService) {
                 thLevel: 6,
                 unitsUsed: ["Balloons", "Archers"],
                 link: "https://www.youtube.com/watch?v=YT9G8h7BB5I"
-            }
-        ];
-        var th7attacks = [
+            },
         
             {
                 name: "Mass Dragons (Strategic Dragon Attack)",
@@ -56,9 +43,7 @@ app.controller('attacksCtrl', function($scope, attacksService) {
                 thLevel: 7,
                 unitsUsed: ["Giants", "Wizards", "Healers"]
         
-            }
-        ];
-        var th8attacks = [
+            },
             
             {
                 name: "Hog Rider Rush",
@@ -79,10 +64,7 @@ app.controller('attacksCtrl', function($scope, attacksService) {
                 thLevel: 8,
                 unitsUsed: ["Golems", "Wizards", "Pekkas", "Wall Breakers"],
                 link: "https://youtu.be/FGcJOcgg0aQ"
-            }
-        ];
-    
-        var th9attacks = [
+            },
         
             {
                 name: "PentaLaLoon",
@@ -112,24 +94,4 @@ app.controller('attacksCtrl', function($scope, attacksService) {
                 link: "https://youtu.be/-gycxu61iGI?list=PL6zRJH-HQH-F4sxMJHohkTp1LIn9IdHM_"
                 
             }
-        
-        
-        ];
-    
-    $scope.th5 = th5attacks;
-    $scope.fiveShowing = false;
-    
-        $scope.th6 = th6attacks;
-    $scope.sixShowing = false;
-    
-        $scope.th7 = th7attacks;
-    $scope.sevenShowing = false;
-    
-        $scope.th8 = th8attacks;
-    $scope.eightShowing = false;
-    
-        $scope.th9 = th9attacks;
-    $scope.nineShowing = false;
-    
-    
-})
+];

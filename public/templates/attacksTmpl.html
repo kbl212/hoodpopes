@@ -4,19 +4,47 @@
     <br/>
     <br/>
     
-    <button class="btn btn-danger btn-lg btn-block">Town Hall 5</button>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="fiveShowing=!fiveShowing">Town Hall 5</button>
+        
+        <li ng-repeat="attackStrat in th5 | orderBy: '+name'" ng-show="fiveShowing">
     
-    <button class="btn btn-danger btn-lg btn-block">Town Hall 6</button>
+            <a href="{{attractStrat.link}}" target="_blank">{{attackStrat.name}}</a>
+            
+        </li>
     
-    <button class="btn btn-danger btn-lg btn-block">Town Hall 7</button>
+        
+    <button class="btn btn-danger btn-lg btn-block" ng-click="sixShowing=!sixShowing">Town Hall 6</button>
+        
+        <li ng-repeat="attackStrat in th6 | orderBy: '+name'" ng-show="sixShowing">
     
-    <button class="btn btn-danger btn-lg btn-block">Town Hall 8</button>
+            <a href="{{attackStrat.link}}" target="_blank">{{attackStrat.name}}</a>
     
-    <button class="btn btn-danger btn-lg btn-block">Town Hall 9</button>
+        </li>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="sevenShowing=!sevenShowing">Town Hall 7</button>
+        
+        <li ng-repeat="attackStrat in th7 | orderBy: '+name'" ng-show="sevenShowing">
+    
+            <a href="{{attackStrat.link}}" target="_blank">{{attackStrat.name}}</a>
+    
+        </li>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="eightShowing=!eightShowing">Town Hall 8</button>
+        
+        <li ng-repeat="attackStrat in th8 | orderBy: '+name'" ng-show="eightShowing">
+    
+            <a href="{{attackStrat.link}}" target="_blank">{{attackStrat.name}}</a>
+            
+        </li>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="nineShowing=!nineShowing">Town Hall 9</button>
+        
+        <li ng-repeat="attackStrat in th9 | orderBy: '+name'" ng-show="nineShowing">
+    
+            <a href="{{attackStrat.link}}" target="_blank">{{attackStrat.name}}</a>
+    
+        </li>
 
 
-
-
-
+    </br>
+    </br>
+    </br>
 
 </div>
