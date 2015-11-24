@@ -4,41 +4,40 @@
     <br/>
     <br/>
     
-    <button class="btn btn-danger btn-lg btn-block" ng-click="fiveShowing=!fiveShowing">Town Hall 5</button>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="fiveShowing=!fiveShowing; getTH5attacks()">Town Hall 5</button>
         
         <li ng-repeat="attack in th5Attacks | orderBy: '+name'" ng-show="fiveShowing">
     
-            <a href="{{attack}}" target="_blank">{{attack}}</a>
-            testing
+            <a href="{{attack.link}}" target="_blank">{{attack.name}}</a>
         </li>
     
         
-    <button class="btn btn-danger btn-lg btn-block" ng-click="sixShowing=!sixShowing">Town Hall 6</button>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="sixShowing=!sixShowing; getTH6attacks()">Town Hall 6</button>
         
-        <li ng-repeat="attackStrat in th6 | orderBy: '+name'" ng-show="sixShowing">
+        <li ng-repeat="attack in th6Attacks | orderBy: '+name'" ng-show="sixShowing">
     
-            <a href="{{attackStrat.link}}" target="_blank">{{attackStrat.name}}</a>
+            <a href="{{attack.link}}" target="_blank">{{attack.name}}</a>
     
         </li>
-    <button class="btn btn-danger btn-lg btn-block" ng-click="sevenShowing=!sevenShowing">Town Hall 7</button>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="sevenShowing=!sevenShowing; getTH7attacks()">Town Hall 7</button>
         
-        <li ng-repeat="attackStrat in th7 | orderBy: '+name'" ng-show="sevenShowing">
+        <li ng-repeat="attack in th7Attacks | orderBy: '+name'" ng-show="sevenShowing">
     
-            <a href="{{attackStrat.link}}" target="_blank">{{attackStrat.name}}</a>
+            <a href="{{attack.link}}" target="_blank">{{attack.name}}</a>
     
         </li>
-    <button class="btn btn-danger btn-lg btn-block" ng-click="eightShowing=!eightShowing">Town Hall 8</button>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="eightShowing=!eightShowing; getTH8attacks()">Town Hall 8</button>
         
-        <li ng-repeat="attackStrat in th8 | orderBy: '+name'" ng-show="eightShowing">
+        <li ng-repeat="attack in th8Attacks | orderBy: '+name'" ng-show="eightShowing">
     
-            <a href="{{attackStrat.link}}" target="_blank">{{attackStrat.name}}</a>
+            <a href="{{attack.link}}" target="_blank">{{attack.name}}</a>
             
         </li>
-    <button class="btn btn-danger btn-lg btn-block" ng-click="nineShowing=!nineShowing">Town Hall 9</button>
+    <button class="btn btn-danger btn-lg btn-block" ng-click="nineShowing=!nineShowing; getTH9attacks()">Town Hall 9</button>
         
-        <li ng-repeat="attackStrat in th9 | orderBy: '+name'" ng-show="nineShowing">
+        <li ng-repeat="attack in th9Attacks | orderBy: '+name'" ng-show="nineShowing">
     
-            <a href="{{attackStrat.link}}" target="_blank">{{attackStrat.name}}</a>
+            <a href="{{attack.link}}" target="_blank">{{attack.name}}</a>
     
         </li>
 

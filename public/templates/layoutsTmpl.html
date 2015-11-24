@@ -4,25 +4,9 @@
     <br/>
     <br/>
     
-    <button class="btn btn-primary btn-lg btn-block" ng-click="fiveShowing=!fiveShowing">Town Hall 5</button>
+    <button class="btn btn-primary btn-lg btn-block" ng-click="fiveShowing=!fiveShowing; getTH5layouts(5)">Town Hall 5</button>
     
-    <li ng-repeat="layout in th5" ng-show="fiveShowing">
-    
-        <a href="{{layout.link}}">{{layout.name}}</a>
-    
-    </li>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <button class="btn btn-primary btn-lg btn-block" ng-click="sixShowing=!sixShowing">Town Hall 6</button>
-    
-        <li ng-repeat="layout in th6" ng-show="sixShowing">
+    <li ng-repeat="layout in th5Layouts" ng-show="fiveShowing">
     
         <a href="{{layout.link}}">{{layout.name}}</a>
     
@@ -36,11 +20,9 @@
     
     
     
+    <button class="btn btn-primary btn-lg btn-block" ng-click="sixShowing=!sixShowing; getTH6layouts(6)">Town Hall 6</button>
     
-    
-    <button class="btn btn-primary btn-lg btn-block" ng-click="sevenShowing=!sevenShowing">Town Hall 7</button>
-    
-        <li ng-repeat="layout in th7" ng-show="sevenShowing">
+        <li ng-repeat="layout in th6Layouts" ng-show="sixShowing">
     
         <a href="{{layout.link}}">{{layout.name}}</a>
     
@@ -56,11 +38,9 @@
     
     
     
+    <button class="btn btn-primary btn-lg btn-block" ng-click="sevenShowing=!sevenShowing; getTH7layouts(7)">Town Hall 7</button>
     
-    
-    <button class="btn btn-primary btn-lg btn-block" ng-click="eightShowing=!eightShowing">Town Hall 8</button>
-    
-        <li ng-repeat="layout in th8" ng-show="eightShowing">
+        <li ng-repeat="layout in th7Layouts" ng-show="sevenShowing">
     
         <a href="{{layout.link}}">{{layout.name}}</a>
     
@@ -78,9 +58,29 @@
     
     
     
-    <button class="btn btn-primary btn-lg btn-block" ng-click="nineShowing=!nineShowing">Town Hall 9</button>
+    <button class="btn btn-primary btn-lg btn-block" ng-click="eightShowing=!eightShowing; getTH8layouts(8)">Town Hall 8</button>
     
-        <li ng-repeat="layout in th9" ng-show="nineShowing">
+        <li ng-repeat="layout in th8Layouts" ng-show="eightShowing">
+    
+        <a href="{{layout.link}}">{{layout.name}}</a>
+    
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <button class="btn btn-primary btn-lg btn-block" ng-click="nineShowing=!nineShowing; getTH9layouts(9)">Town Hall 9</button>
+    
+        <li ng-repeat="layout in th9Layouts" ng-show="nineShowing">
     
         <a href="{{layout.link}}">{{layout.name}}</a>
     

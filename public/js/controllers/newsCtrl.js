@@ -1,7 +1,21 @@
 var app = angular.module('hoodPopes');
 
 
-app.controller('newsCtrl', function($scope) {
+app.controller('newsCtrl', function($scope, newsService) {
+    
+    // CALLS TO SERVICE
+    $scope.getPosts = function() {
+        newsService.getAllPosts().then(function(response) {
+            $scope.posts = response;
+        });
+    }
+    
+    
+    
+    
+    
+    
+    
     
     $scope.passwordBoxShowing = false;
     
