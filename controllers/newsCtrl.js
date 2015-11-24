@@ -1,4 +1,4 @@
-var Posts = require('../models/newsModel.js');
+var Post = require('../models/newsModel.js');
 
 
 
@@ -9,13 +9,18 @@ var Posts = require('../models/newsModel.js');
 
 module.exports = {
     createPost: function(req,res,next) {
-        Posts.push(req.body);
-    
-        res.status(200).json(Posts);
+        var newPost = new Post(req.body);
+        newPost.save(function(err, result) {
+            if (err) return res.status(500).send(err);
+            else res.send(result);
+        });
     },
     
     getPosts: function(req,res,next) {
-        
-        res.status(200).json(Posts);
+        Post.find().exec(function(err, result) {
+            if (err) return res.status(500).send(err);
+            else res.send(result);
+            
+        });
     }
 };

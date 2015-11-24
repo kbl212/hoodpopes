@@ -4,9 +4,38 @@ var app = angular.module('hoodPopes');
 
 app.controller('attacksCtrl', function($scope, attacksService) {
     
+    $scope.getTH5attacks = function() {
+        attacksService.getAttacks(5).then(function(response) {
+            $scope.th5Attacks = response;
+        });
+    }
+    
+    $scope.getTH6attacks = function() {
+        attacksService.getAttacks(6).then(function(response) {
+            $scope.th6Attacks = response;
+        });
+    }
+        
+    $scope.getTH7attacks = function() {
+        attacksService.getAttacks(7).then(function(response) {
+            $scope.th7Attacks = response;
+        });
+    }
+            
+    $scope.getTH8attacks = function() {
+        attacksService.getAttacks(8).then(function(response) {
+            $scope.th8Attacks = response;
+        });
+    }
+                
+    $scope.getTH9attacks = function() {
+        attacksService.getAttacks(9).then(function(response) {
+            $scope.th9Attacks = response;
+        });
+    }
     
     
-    
+    /*
         var th5attacks = [
         
             {
@@ -115,20 +144,15 @@ app.controller('attacksCtrl', function($scope, attacksService) {
         
         
         ];
-    
-    $scope.th5 = th5attacks;
+    */
     $scope.fiveShowing = false;
     
-        $scope.th6 = th6attacks;
     $scope.sixShowing = false;
     
-        $scope.th7 = th7attacks;
     $scope.sevenShowing = false;
     
-        $scope.th8 = th8attacks;
     $scope.eightShowing = false;
     
-        $scope.th9 = th9attacks;
     $scope.nineShowing = false;
     
     

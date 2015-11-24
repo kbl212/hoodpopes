@@ -15,6 +15,16 @@ module.exports = {
         }
         
         res.status(200).json(layoutsArr);
+    },
+    
+    createLayout: function(req,res,next) {
+        
+        var newLayout = new Layout(req.body);
+        newLayout.save(function(err, result) {
+            if (err) return res.status(500).send(err);
+            else res.send(result);
+            
+        });
     }
     
     

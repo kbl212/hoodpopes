@@ -6,10 +6,10 @@
     
     <button class="btn btn-danger btn-lg btn-block" ng-click="fiveShowing=!fiveShowing">Town Hall 5</button>
         
-        <li ng-repeat="attackStrat in th5 | orderBy: '+name'" ng-show="fiveShowing">
+        <li ng-repeat="attack in th5Attacks | orderBy: '+name'" ng-show="fiveShowing">
     
-            <a href="{{attractStrat.link}}" target="_blank">{{attackStrat.name}}</a>
-            
+            <a href="{{attack}}" target="_blank">{{attack}}</a>
+            testing
         </li>
     
         

@@ -42,6 +42,7 @@ app.get('/api/attacks', attacksCtrl.getAttacks);
 app.post('/api/attacks', attacksCtrl.createAttack);
 //app.delete('/api/attacks', attacksCtrl.deleteAttack);
 app.get('/api/layouts', layoutsCtrl.getLayouts);
+app.post('/api/layouts', layoutsCtrl.createLayout);
 
 app.post('/api/news', newsCtrl.createPost);
 app.get('/api/news', newsCtrl.getPosts);
